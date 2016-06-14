@@ -10,11 +10,13 @@
 		[
 			{
 				xtype : "tabpanel",
+				id    : "idTabPanel",
 				items :
 				[
 					{
 						xtype    : "tab",
 						title    : "Codigo",
+						scrollY  : true,
 						autoLoad :
 						{
 							url    : "php/bd.php",
@@ -23,7 +25,18 @@
 					},
 					{
 						xtype    : "tab",
-						title    : "Tab 1",
+						title    : "Selected and State",
+						selected : true,
+						autoLoad :
+						{
+							url    : "php/bd.php",
+							params : { opc : "state_tab_panel" }
+						}
+					},
+					{
+						xtype    : "tab",
+						title    : "Tab 2",
+						scrollY  : true,
 						autoLoad :
 						{
 							url    : "php/bd.php",
@@ -32,7 +45,9 @@
 					},
 					{
 						xtype    : "tab",
-						title    : "Tab 2",
+						id       : "idTab",
+						title    : "Tab disable Json",
+						disable  : true,
 						autoLoad :
 						{
 							url    : "php/bd.php",
