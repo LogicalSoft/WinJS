@@ -61,7 +61,7 @@
 						[
 							{
 								xtype : 'tbtext',
-								text  : '<div><span style="color:red; font-size:40px;">$</span><span style="color:red; font-size:40px;">W</span><span style="font-size:30px;">in JS</span></div>',
+								text  : '<div><span style="color:red; font-size:40px;">$</span><span style="color:red; font-size:40px;">W</span><span style="font-size:30px;">in JS </span>v0.3</div>',
 								width : 400
 							},'->','-',
 							{
@@ -77,9 +77,8 @@
 						]
 					},
 					{
-						xtype   : 'body',
-						id      : 'body-win',
-						scrollY : true
+						xtype : 'body',
+						id    : 'body-win',
 					}
 				]
 
